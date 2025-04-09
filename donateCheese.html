@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Donate a Cheese today!</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="images/cheeseLogo.webp" type="image/x-icon"/>
+        <script type="text/javascript" src="donateCheese.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Add HTML markup elements for your web site below -->
+        <header>
+            <nav>
+                <ul id = "subpageHeader">
+                    <li><a href = "index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class = "about">
+                <div id = "donateCheeseName">
+                <h1>If you have a cheese, please donate here!</h1>
+                <p>What's your name?</p>
+                <input id="donateCheeseNameInput" placeholder="Enter a date here.">
+                <button id = "donateCheeseNameBtn">Submit</button>
+                <p id="donateCheeseNameConfirm"></p>
+                </div>
+
+
+                <div id = "donateCheeseEntry" hidden>
+                <h1>If you have a cheese, please donate here!</h1>
+                <p>What's your cheese's name?</p>
+                <input id="donateCheeseInput" placeholder="Enter your cheese's name here.">
+                <button id = "donateCheeseBtn">Submit</button>
+                </div>
+
+                <div id = "donateCheeseFinal" hidden>
+                <p id="donateCheeseConfirm"></p>
+                <button id = "returnFirstPage">Donate another cheese</button>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            <p id="copyright">&copy; Dang Inc. 2025</p>
+        </footer>
+
+    </body>
+</html>
