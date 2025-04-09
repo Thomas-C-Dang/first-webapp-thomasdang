@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Buy a Cheese today!</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="images/cheeseLogo.webp" type="image/x-icon" />
+        <script type="text/javascript" src="buyCheese.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Add HTML markup elements for your web site below -->
+        <header>
+            <nav>
+                <ul id = "subpageHeader">
+                    <li><a href = "index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class = "about">
+                <h1>Buy your cheese now!</h1>
+                <div id = "nameEntry">
+                    <p>Note that all cheeses offered on the next page is subject to change</p>
+                    <p>When do you plan to go to the next meeting? (Enter it in a format of month-date-year)</p>
+                    <input id="myInput" placeholder="Enter a date here.">
+                    <button id = "myBtn">Submit</button>
+                </div>
+
+
+                <div id = "cheeseSelect" hidden>
+                    <p>Pick a cheese to buy from us!</p>
+                    <label for="cheeseStorage">Choose a cheese to buy: </label>
+                        <select name = "cheeseStorage" id = "cheeseStorage">
+                            <option value="none" selected>Select a cheese...</option>                            
+                            <option value = "10" >Gorgonzola - $10</option>
+                            <option value = "5" >Cheddar - $5</option>
+                            <option value = "7.5" >Wensleydale - $7.50</option>
+                        </select>
+                    <button id = "submitOrder">Submit</button>
+                </div>
+
+                <div id = "checkout" hidden>
+                    <p>Please choose a payment method! No spaces are allowed in the credit card entry.</p>
+                    <div id = "receipt">
+                        <p id = "fee">Total: $0.00</p>
+                        <button id = "buyMore">Buy more cheese</button>
+                    </div>
+                    <div id = "cardPayment">
+                        <input id = "creditCardNum" placeholder="Type in your credit card number here...">
+                        <button id = "submitOnlinePayment">Pay with Card</button>
+                    </div>
+                    <button id = "payCash">Pay with Cash</button>
+                </div>
+
+                <div id = "confirmCardPayment" hidden>
+                    <p>Thank you for your purchase! An email has been sent to confirm your purchase.</p>
+                    <button id = "goBackCard">Start Another Purchase</button>
+                </div>
+
+                <div id = "confirmCashPayment" hidden>
+                    <p>Please bring in your fees that you owe for the cheese. If you think this is a mistake, contact your club leader.</p>
+                    <button id = "goBackCash">Start Another Purchase</button>
+                </div>
+
+
+
+                <p id="myPara"></p>
+
+
+            </section>
+
+
+        </main>
+        <footer>
+            <p id="copyright">&copy; Dang Inc. 2025</p>
+        </footer>
+
+    </body>
+</html>
